@@ -1,0 +1,14 @@
+{
+  "name": "solana-rate-limiter-client",
+  "version": "1.0.0",
+  "description": "CLI client for Solana Rate Limiter",
+  "main": "test.js",
+  "scripts": {
+    "test": "node test.js",
+    "cli": "node cli.js"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.95.0",
+    "borsh": "^0.7.0"
+  }
+}
