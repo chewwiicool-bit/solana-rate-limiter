@@ -2,12 +2,16 @@
 name = "solana-rate-limiter"
 version = "0.1.0"
 edition = "2021"
-description = "On-chain rate limiter system — Web2 backend patterns on Solana"
+description = "On-chain rate limiter — Web2 backend patterns as Solana programs"
 license = "MIT"
 
 [lib]
 crate-type = ["cdylib", "lib"]
 name = "solana_rate_limiter"
+
+[features]
+no-entrypoint = []
+test-sbf = []
 
 [dependencies]
 solana-program = "=1.18.26"
@@ -17,6 +21,7 @@ borsh = "=0.10.3"
 solana-program-test = "=1.18.26"
 solana-sdk = "=1.18.26"
 tokio = { version = "1", features = ["full"] }
+borsh = "=0.10.3"
 
 [profile.release]
 overflow-checks = true
